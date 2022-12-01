@@ -8,6 +8,7 @@ public class ItemShown : MonoBehaviour
     public GameObject Smallrock;
     public GameObject log;
     public int[] items;
+    public int[] itemsInStack;
     SelectedItem SelectedItem;
 
     void Start()

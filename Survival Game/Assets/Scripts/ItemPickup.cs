@@ -18,9 +18,23 @@ public class ItemPickup : MonoBehaviour
         {
             for (int i = 0; i < 9; i++)
             {
+                
+                if (ItemShown.items[i] == RaycastSelector.raycastHit.transform.gameObject.GetComponent<ItemType>().type
+                    && ItemShown.itemsInStack[i] < 64)
+                {
+                    ItemShown.itemsInStack[i] += 1;
+                    Destroy(RaycastSelector.raycastHit.transform.gameObject);
+                    print(ItemShown.itemsInStack[i]);
+                    return;
+                }
+                
+            }
+            for (int i = 0; i < 9; i++)
+            {
                 if (ItemShown.items[i] == 0)
                 {
                     ItemShown.items[i] = RaycastSelector.raycastHit.transform.gameObject.GetComponent<ItemType>().type;
+                    ItemShown.itemsInStack[i] = 1;
                     Destroy(RaycastSelector.raycastHit.transform.gameObject);
                     return;
                 }
