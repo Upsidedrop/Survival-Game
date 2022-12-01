@@ -24,7 +24,6 @@ public class ItemPickup : MonoBehaviour
                 {
                     ItemShown.itemsInStack[i] += 1;
                     Destroy(RaycastSelector.raycastHit.transform.gameObject);
-                    print(ItemShown.itemsInStack[i]);
                     return;
                 }
                 
