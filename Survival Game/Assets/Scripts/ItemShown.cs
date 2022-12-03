@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class ItemShown : MonoBehaviour
@@ -56,6 +55,13 @@ public class ItemShown : MonoBehaviour
                 log.SetActive(false);
                 break;
         }
-        
+        for (int i = 0; i < 8; i++)
+        {
+            if (itemsInStack[i] <= 0)
+            {
+                items[i] = 0;
+                itemsInStack[i] = 0;
+            }
+        }
     }
 }

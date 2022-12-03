@@ -19,7 +19,11 @@ public class ObjectBreak : MonoBehaviour
         {
             for (int i = 0; i < dropNumber; i++)
             {
-                Instantiate(Drop, new Vector3(transform.position.x, dropHeight, transform.position.z), Quaternion.Euler(Random.Range(0, 360), -48.927f, Random.Range(0, 360)));       
+                Instantiate(Drop, 
+                    new Vector3(
+                    transform.position.x,
+                    dropHeight,
+                    transform.position.z), Quaternion.Euler(Random.Range(0, 360), -48.927f, Random.Range(0, 360)));       
 
             }
             Destroy(transform.gameObject);

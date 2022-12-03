@@ -14,7 +14,8 @@ public class ItemPickup : MonoBehaviour
     void Update()
     {
         if (Input.GetAxis("Pick Up") > 0
-            && RaycastSelector.raycastHit.transform.gameObject.GetComponent<ItemType>() != null)
+            && RaycastSelector.raycastHit.transform.gameObject.GetComponent<ItemType>() != null
+            && Input.GetAxis("Drop") == 0)
         {
             for (int i = 0; i < 9; i++)
             {

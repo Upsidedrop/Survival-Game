@@ -6190,6 +6190,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
+--- !u!114 &1544645269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544645255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7306f9d4b86a343a94b026a2ddf98f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectedItem: {fileID: 653688598}
+  ItemShown: {fileID: 653688599}
+  cameraTransform: {fileID: 963194228}
+  prefabName: SmallRock
 --- !u!1001 &1649042623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6975,6 +6991,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 4
+--- !u!114 &1915876518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915876505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7306f9d4b86a343a94b026a2ddf98f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectedItem: {fileID: 653688598}
+  ItemShown: {fileID: 653688599}
+  cameraTransform: {fileID: 963194228}
+  prefabName: Log
 --- !u!1001 &2002923403
 PrefabInstance:
   m_ObjectHideFlags: 0
