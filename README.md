@@ -1,1 +1,1 @@
-# Survival-Game
+# Survival Game
